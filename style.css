@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#toggleDarkMode {
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-section {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.search-section input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  width: 100%;
+  max-width: 400px;
+}
+
+.calendar-section {
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input, select, button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Add styles for category dropdown */
+select {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.task-category {
+  font-size: 12px;
+  color: #999;
+  font-style: italic;
+}
+
+.task-high-priority {
+  color: red;
+  font-weight: bold;
+}
+
+.task-medium-priority {
+  color: orange;
+  font-weight: bold;
+}
+
+.task-low-priority {
+  color: green;
+  font-weight: bold;
+}
+
+.task-date {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark .container {
+  background-color: #444;
+}
+
+body.dark input, body.dark select, body.dark button {
+  background-color: #555;
+  color: white;
+  border-color: #777;
+}
+
+body.dark .task-info {
+  color: white;
+}
+
+/* Task List Styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+li.completed {
+  background-color: #d3ffd3;
+  text-decoration: line-through;
+}
+
+button.edit-btn, button.delete-btn {
+  margin-left: 10px;
+}
+
+button.edit-btn {
+  background-color: #ffc107;
+}
+
+button.delete-btn {
+  background-color: #dc3545;
+}
+
+button.edit-btn:hover, button.delete-btn:hover {
+  opacity: 0.8;
+}
+
+/* Fade-in animation for task items */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
