@@ -6,7 +6,7 @@ A simple, elegant, and fully responsive **To-Do List Web App** built using **HTM
 
 ## 🌐 Live Demo
 
-🔗 [View on GitHub Pages](https://yourusername.github.io/to-do-list-app)
+🔗 [View on GitHub Pages](https://sreehithareddypuli05.github.io/to-do-list)
 
 
 
@@ -48,7 +48,7 @@ to-do-list-app/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/to-do-list-app.git
+git clone https://github.com/sreehithareddypuli05/to-do-list.git
 cd to-do-list-app
 2. Open in Browser
 
